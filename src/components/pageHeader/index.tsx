@@ -6,8 +6,12 @@ import logoImg from '../../assets/images/logo.svg';
 
 
 // import { Container } from './styles';
+interface PageHeaderProps{
+    title:string;
 
-const PageHeader: React.FC = () => {
+}
+
+const PageHeader: React.FC<PageHeaderProps> = (props) => {
   return (<>
     <header className="page-header">
       <div className="top-bar-container">
@@ -17,7 +21,7 @@ const PageHeader: React.FC = () => {
         <img src={logoImg} alt="proffy"></img>
       </div>
       <div className="header-content"> 
-        <strong>Estes são os proffy disponíveis.</strong>
+  <strong>{props.title}</strong>
       </div>
 
     </header>
