@@ -1,11 +1,10 @@
 import React from 'react';
 import './assets/styles/global.css';
+import Landing from './pages/Landing';
 
 function App() {
   return (
-    <div >
-     <h1>Hello Word</h1>
-    </div>
+    <Landing></Landing>
   );
 }
 
