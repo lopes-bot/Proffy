@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import backIcon from '../../assets/images/icons/back.svg';  
 import logoImg from '../../assets/images/logo.svg';
+import './style.css';
 
 // import { Container } from './styles';
 
@@ -14,6 +15,9 @@ const TeacherList: React.FC = () => {
           <img src={backIcon} alt="volta"></img>
         </Link>
         <img src={logoImg} alt="proffy"></img>
+      </div>
+      <div className="header-content"> 
+        <strong>Estes são os proffy disponíveis.</strong>
       </div>
 
     </header>
