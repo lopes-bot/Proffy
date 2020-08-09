@@ -25,6 +25,8 @@ const TeacherList: React.FC = () => {
     </PageHeader>
     <main>
      <TeacherItem></TeacherItem>
+     <TeacherItem></TeacherItem>
+     <TeacherItem></TeacherItem>
     </main>
   </div>
   </>);
