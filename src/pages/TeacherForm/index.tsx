@@ -9,6 +9,26 @@ const TeacherForm: React.FC = () => {
     title="Que incrível que você quer da aulas."
     description="O primeiro passo é preencher esse formulario de inscrição"
     ></PageHeader>
+    <main>
+      <fieldset>
+        <legend>Seus dados</legend>
+
+        <div className="input-block">
+          <label htmlFor="name">Nome Completo</label>
+          <input type="text" id="name"></input>
+        </div>
+
+        <div className="input-block">
+          <label htmlFor="avatar">Avatar</label>
+          <input type="text" id="avatar"></input>
+        </div>
+
+        <div className="input-block">
+          <label htmlFor="whatsapp">whatsapp</label>
+          <input type="text" id="whatsapp"></input>
+        </div>
+      </fieldset>
+    </main>
   </div>
   </>);
 }
