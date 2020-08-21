@@ -3,6 +3,7 @@ import React from 'react';
 // import { Container } from './styles';
 import PageHeader from '../../components/pageHeader';
 import Input from '../../components/input';
+import warningIcon from '../../assets/images/icons/warning.svg';
 import './style.css';
 const TeacherForm: React.FC = () => {
   return (<>
@@ -24,6 +25,16 @@ const TeacherForm: React.FC = () => {
           <Input name="cost" label="Custo da sua hora por aula"></Input>
           <Input name="whatsapp" label="Whatsapp"></Input>
       </fieldset>
+      <footer>
+        <p>
+          <img src={warningIcon} alt="Aviso Importante"></img>
+          Importante! <br></br>
+          Preencha todos os dados
+        </p>
+        <button type="button">
+          Salvar Cadastro
+        </button>
+      </footer>
     </main>
   </div>
   </>);
